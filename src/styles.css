@@ -2,14 +2,14 @@
   font-family:"Akzidenz Grotesk Pro Extended";
   src:url("/fonts/akzidenz-grotesk-pro-extended.otf") format("opentype");
   font-style:normal;
-  font-weight:400 600;
+  font-weight:400;
   font-display:swap;
 }
 @font-face {
   font-family:"Akzidenz Grotesk Pro Extended";
   src:url("/fonts/akzidenz-grotesk-pro-bold-extended.otf") format("opentype");
   font-style:normal;
-  font-weight:700 900;
+  font-weight:700;
   font-display:swap;
 }
 
@@ -22,7 +22,7 @@
 *::-webkit-scrollbar-thumb:hover { background:#bdbdbd; }
 *::-webkit-scrollbar-button { display:none; width:0; height:0; }
 html { scroll-behavior:smooth; background:var(--black); }
-body { margin:0; background:var(--black); color:var(--white); font-family:"Akzidenz Grotesk Pro Extended", Arial, sans-serif; overflow-x:hidden; }
+body { margin:0; background:var(--black); color:var(--white); font-family:"Akzidenz Grotesk Pro Extended", Arial, sans-serif; font-synthesis:none; overflow-x:hidden; }
 a { color:inherit; text-decoration:none; }
 button { color:inherit; font:inherit; }
 ::selection { background:#245bff; color:white; }
@@ -94,7 +94,7 @@ h2 { margin:0 2.5vw 6vw; font-size:clamp(80px,15vw,260px); line-height:.72; lett
 .masonryViewport.isDragging,.masonryViewport.isDragging .workCard { cursor:grabbing; }
 .masonryViewport img { user-select:none; -webkit-user-drag:none; }
 .masonryViewport::before { content:""; position:absolute; z-index:7; inset:0; background:rgba(0,0,0,.58); opacity:0; pointer-events:none; }
-.masonryViewport::after { content:"ДВИГАЙ ТЕМУ  ↔"; position:absolute; z-index:8; left:50%; top:50%; padding:17px 24px 15px; background:#fff; color:#000; font-size:clamp(20px,2vw,30px); line-height:1; font-weight:900; letter-spacing:.025em; white-space:nowrap; opacity:0; transform:translate(-50%,-50%); pointer-events:none; }
+.masonryViewport::after { content:"ДВИГАЙ ТЕМУ  ↔"; position:absolute; z-index:8; left:50%; top:50%; padding:17px 24px 15px; background:#fff; color:#000; font-size:clamp(20px,2vw,30px); line-height:1; font-weight:700; letter-spacing:.025em; white-space:nowrap; opacity:0; transform:translate(-50%,-50%); pointer-events:none; }
 .masonryViewport.isVisible::before { animation:hintShade 3.2s ease .7s both; }
 .masonryViewport.isVisible::after { animation:swipeHint 3.2s cubic-bezier(.2,.75,.2,1) .7s both; }
 .masonryViewport.hintDismissed::before,.masonryViewport.hintDismissed::after { animation:hintDismiss .42s ease both!important; }
@@ -117,7 +117,7 @@ h2 { margin:0 2.5vw 6vw; font-size:clamp(80px,15vw,260px); line-height:.72; lett
 .masonryColumn .masonryCard.isMotion { outline:1px solid rgba(255,255,255,.22); outline-offset:-1px; }
 .workCard img { display:block; width:100%; height:auto; object-fit:contain; object-position:center; background:#000; transform:none; transition:filter .45s ease, opacity .35s ease; }
 .workCard:after { content:""; position:absolute; inset:0; background:linear-gradient(transparent 38%,rgba(0,0,0,.82)); opacity:0; transition:opacity .35s ease; }
-.cardInfo { position:absolute; z-index:2; left:max(10px,4cqw); right:max(10px,4cqw); bottom:max(9px,3cqw); max-width:92%; font-weight:900; font-size:clamp(14px,8cqw,44px); line-height:.86; letter-spacing:-.055em; overflow-wrap:anywhere; opacity:0; transform:translateY(20px); transition:opacity .35s ease, transform .45s cubic-bezier(.2,.75,.2,1); }
+.cardInfo { position:absolute; z-index:2; left:max(10px,4cqw); right:max(10px,4cqw); bottom:max(9px,3cqw); max-width:92%; font-weight:700; font-size:clamp(14px,8cqw,44px); line-height:.86; letter-spacing:-.055em; overflow-wrap:anywhere; opacity:0; transform:translateY(20px); transition:opacity .35s ease, transform .45s cubic-bezier(.2,.75,.2,1); }
 .workCard:hover img, .workCard:focus-visible img { opacity:.72; }
 .workCard:hover:after, .workCard:focus-visible:after { opacity:1; }
 .workCard:hover .cardInfo, .workCard:focus-visible .cardInfo { opacity:1; transform:none; }
@@ -128,11 +128,11 @@ h2 { margin:0 2.5vw 6vw; font-size:clamp(80px,15vw,260px); line-height:.72; lett
 }
 
 .contactSection { padding:3vw 2.5vw 4vw; background:#000; }
-.contactSection a { display:grid; grid-template-columns:max-content max-content; column-gap:.14em; width:max-content; max-width:100%; font-weight:900; line-height:1; letter-spacing:-.055em; }
+.contactSection a { display:grid; grid-template-columns:max-content max-content; column-gap:.14em; width:max-content; max-width:100%; font-weight:700; line-height:1; letter-spacing:-.055em; }
 .revealContact { opacity:0; transform:translateY(90px) scale(.96); transform-origin:left bottom; transition:opacity .8s ease, transform 1.15s cubic-bezier(.16,1,.3,1); }
 .revealContact.isVisible { opacity:1; transform:none; }
 .contactSection span { grid-column:1; display:block; margin-bottom:-.08em; font-size:clamp(44px,9vw,156px); line-height:1; color:transparent; -webkit-text-stroke:1.5px var(--white); transform:scaleY(.72); transform-origin:left bottom; }
-.contactSection strong { display:contents; font-size:clamp(68px,10.4vw,180px); line-height:1; font-weight:900; white-space:nowrap; }
+.contactSection strong { display:contents; font-size:clamp(68px,10.4vw,180px); line-height:1; font-weight:700; white-space:nowrap; }
 .contactSection strong b { grid-column:1; font:inherit; transform:scaleY(.72); transform-origin:left top; transition:opacity .25s ease; }
 .contactSection strong i { grid-column:2; align-self:start; font:inherit; font-style:normal; font-size:.96em; line-height:1; transform:translateY(-.02em) scaleY(.72); transform-origin:left top; transition:opacity .25s ease; }
 .contactSection a:hover strong b,.contactSection a:hover strong i { opacity:.5; }
