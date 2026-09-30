@@ -80,6 +80,7 @@ export default function Home() {
   const [active, setActive] = useState<{ categoryId: string; startIndex: number; flight: FlightGeometry } | null>(null);
   const [closing, setClosing] = useState(false);
   const [blinking, setBlinking] = useState(false);
+  const [heroReady, setHeroReady] = useState(false);
   const [headerHidden, setHeaderHidden] = useState(false);
   const [flightVisible, setFlightVisible] = useState(false);
   const [flightReady, setFlightReady] = useState(false);
@@ -98,6 +99,33 @@ export default function Home() {
   useLayoutEffect(() => {
     const seed = globalThis.crypto?.getRandomValues(new Uint32Array(1))[0] ?? Date.now();
     setMasonryColumns(createMasonryColumns(seed));
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    const mobile = window.matchMedia("(max-width: 900px)").matches;
+    const heroAssets = mobile
+      ? ["hero-roles-mobile.svg", "hero-signature-mobile.svg", "hero-zholudev-mobile.webp", "hero-misha-mobile.webp", "hero-person.webp"]
+      : ["hero-roles-desktop.svg", "hero-signature-desktop.svg", "hero-zholudev-desktop.webp", "hero-misha-desktop.webp", "hero-person-desktop.webp"];
+
+    const loadAsset = async (src: string) => {
+      const image = new Image();
+      image.src = assetPath(src);
+      try {
+        await image.decode();
+      } catch {
+        await new Promise<void>((resolve) => {
+          if (image.complete) return resolve();
+          image.addEventListener("load", () => resolve(), { once: true });
+          image.addEventListener("error", () => resolve(), { once: true });
+        });
+      }
+    };
+
+    void Promise.all(heroAssets.map(loadAsset)).then(() => {
+      if (!cancelled) window.requestAnimationFrame(() => setHeroReady(true));
+    });
+    return () => { cancelled = true; };
   }, []);
 
   const closeProject = () => {
@@ -277,10 +305,11 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    if (!heroReady) return;
     const desktopBlink = new Image();
-    desktopBlink.src = assetPath("hero-person-blink-desktop.png");
+    desktopBlink.src = assetPath("hero-person-blink-desktop.webp");
     const mobileBlink = new Image();
-    mobileBlink.src = assetPath("hero-person-blink.png");
+    mobileBlink.src = assetPath("hero-person-blink.webp");
 
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
@@ -319,11 +348,11 @@ export default function Home() {
       cancelled = true;
       timers.forEach(clearTimeout);
     };
-  }, []);
+  }, [heroReady]);
 
   return (
     <main>
-      <section className="hero" id="top">
+      <section className={`hero${heroReady ? " isReady" : ""}`} id="top" aria-busy={!heroReady}>
         <picture className="heroRoles">
           <source media="(max-width: 900px)" srcSet={assetPath("hero-roles-mobile.svg")} />
           <img src={assetPath("hero-roles-desktop.svg")} alt="Графический, маркетинг, UI/UX дизайнер" />
@@ -333,16 +362,16 @@ export default function Home() {
           <img src={assetPath("hero-signature-desktop.svg")} alt="Жолудев Миша" />
         </picture>
         <picture className="heroSurname">
-          <source media="(max-width: 900px)" srcSet={assetPath("hero-zholudev-mobile.png")} />
-          <img src={assetPath("hero-zholudev-desktop.png")} alt="Жолудев" />
+          <source media="(max-width: 900px)" srcSet={assetPath("hero-zholudev-mobile.webp")} />
+          <img src={assetPath("hero-zholudev-desktop.webp")} alt="Жолудев" fetchPriority="high" />
         </picture>
         <picture className="heroFirstname">
-          <source media="(max-width: 900px)" srcSet={assetPath("hero-misha-mobile.png")} />
-          <img src={assetPath("hero-misha-desktop.png")} alt="Миша" />
+          <source media="(max-width: 900px)" srcSet={assetPath("hero-misha-mobile.webp")} />
+          <img src={assetPath("hero-misha-desktop.webp")} alt="Миша" fetchPriority="high" />
         </picture>
         <picture className="heroPerson">
-          <source media="(max-width: 900px)" srcSet={assetPath(blinking ? "hero-person-blink.png" : "hero-person.png")} />
-          <img src={assetPath(blinking ? "hero-person-blink-desktop.png" : "hero-person-desktop.png")} alt="Миша Жолудев" />
+          <source media="(max-width: 900px)" srcSet={assetPath(blinking ? "hero-person-blink.webp" : "hero-person.webp")} />
+          <img src={assetPath(blinking ? "hero-person-blink-desktop.webp" : "hero-person-desktop.webp")} alt="Миша Жолудев" fetchPriority="high" />
         </picture>
       </section>
 

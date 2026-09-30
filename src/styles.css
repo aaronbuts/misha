@@ -29,16 +29,23 @@ button { color:inherit; font:inherit; }
 
 .hero { min-height:100svh; position:relative; overflow:hidden; background:#000; }
 .hero img { display:block; }
-.heroRoles { position:absolute; z-index:5; top:10.4%; left:6%; width:27.5%; max-width:390px; animation:heroMetaIn .42s steps(3,end) .05s both; }
+.heroRoles { position:absolute; z-index:5; top:10.4%; left:6%; width:27.5%; max-width:390px; opacity:0; }
 .heroRoles img { width:100%; height:auto; }
-.heroSignature { position:absolute; z-index:5; top:10.8%; right:6.5%; width:16%; max-width:230px; animation:heroMetaIn .42s steps(3,end) .14s both; }
+.heroSignature { position:absolute; z-index:5; top:10.8%; right:6.5%; width:16%; max-width:230px; opacity:0; }
 .heroSignature img { width:100%; height:auto; }
-.heroSurname { position:absolute; z-index:1; left:50%; top:15%; width:min(90vw,128vh); transform:translateX(-50%); display:block; animation:heroSurnameIn .72s steps(7,end) .18s both; }
-.heroSurname img { width:100%; height:auto; transform-origin:50% 50%; will-change:transform,filter; animation:lineBoil 420ms steps(1,end) infinite; }
-.heroFirstname { position:absolute; z-index:4; left:50%; bottom:8%; width:min(42vw,62vh); transform:translateX(-50%); display:block; animation:heroFirstnameIn .46s steps(4,end) .78s both; }
-.heroFirstname img { width:100%; height:auto; transform-origin:50% 50%; will-change:transform,filter; animation:lineBoilAlt 510ms steps(1,end) infinite; }
-.heroPerson { position:absolute; z-index:3; left:50%; top:5%; height:91%; width:auto; transform:translateX(-50%); animation:heroPersonIn .58s cubic-bezier(.16,1,.3,1) .48s both; }
+.heroSurname { position:absolute; z-index:1; left:50%; top:15%; width:min(90vw,128vh); transform:translateX(-50%); display:block; opacity:0; }
+.heroSurname img { width:100%; height:auto; transform-origin:50% 50%; will-change:transform,filter; }
+.heroFirstname { position:absolute; z-index:4; left:50%; bottom:8%; width:min(42vw,62vh); transform:translateX(-50%); display:block; opacity:0; }
+.heroFirstname img { width:100%; height:auto; transform-origin:50% 50%; will-change:transform,filter; }
+.heroPerson { position:absolute; z-index:3; left:50%; top:5%; height:91%; width:auto; transform:translateX(-50%); opacity:0; }
 .heroPerson img { width:auto; height:100%; object-fit:contain; object-position:center; filter:contrast(1.04); }
+.hero.isReady .heroRoles { animation:heroMetaIn .42s steps(3,end) .05s both; }
+.hero.isReady .heroSignature { animation:heroMetaIn .42s steps(3,end) .14s both; }
+.hero.isReady .heroSurname { animation:heroSurnameIn .72s steps(7,end) .18s both; }
+.hero.isReady .heroSurname img { animation:lineBoil 420ms steps(1,end) infinite; }
+.hero.isReady .heroFirstname { animation:heroFirstnameIn .46s steps(4,end) .78s both; }
+.hero.isReady .heroFirstname img { animation:lineBoilAlt 510ms steps(1,end) infinite; }
+.hero.isReady .heroPerson { animation:heroPersonIn .58s cubic-bezier(.16,1,.3,1) .48s both; }
 
 @keyframes heroMetaIn {
   0% { opacity:0; transform:translateY(-12px); filter:contrast(2); }
@@ -238,4 +245,5 @@ h2 { margin:0 2.5vw 6vw; font-size:clamp(80px,15vw,260px); line-height:.72; lett
 @media (prefers-reduced-motion:reduce) {
   * { scroll-behavior:auto!important; animation:none!important; transition:none!important; }
   [data-reveal] { opacity:1!important; transform:none!important; }
+  .heroRoles,.heroSignature,.heroSurname,.heroFirstname,.heroPerson { opacity:1!important; }
 }
