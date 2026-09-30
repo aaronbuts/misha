@@ -468,7 +468,7 @@ export default function Home() {
             <button className="overlayClose" onClick={closeProject} aria-label="Закрыть проект">×</button>
             <div className={`overlayTop ${headerHidden ? "isHidden" : ""}`}>
               <div className="overlayHeading">
-                <h3 className={activeCategory.title.length > 27 ? "veryLongTitle" : activeCategory.title.length > 18 ? "longTitle" : undefined}>
+                <h3 className={activeCategory.title.length > 27 ? "veryLongTitle" : activeCategory.title.length > 15 ? "longTitle" : undefined}>
                   {activeCategory.title === "Презентация Лабы для вузов"
                     ? <>Презентация Лабы<br />для ВУЗов</>
                     : activeCategory.title}
