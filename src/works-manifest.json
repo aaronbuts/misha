@@ -1,0 +1,471 @@
+[
+  {
+    "id": "category-01",
+    "title": "DEMOFEST Презентация",
+    "description": "Презентация для финального события ИТ-Лаборатории - ДемоФест",
+    "items": [
+      {
+        "id": "category-01-001",
+        "src": "/works/category-01/001-8878.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-01-002",
+        "src": "/works/category-01/002-8881.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-01-003",
+        "src": "/works/category-01/003-8882.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-01-004",
+        "src": "/works/category-01/004-8883.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-01-005",
+        "src": "/works/category-01/005-8885.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-01-006",
+        "src": "/works/category-01/006-8886.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-01-007",
+        "src": "/works/category-01/007-8887.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "id": "category-02",
+    "title": "Purrweb Шоты",
+    "description": "Больше полугода работал на фрилансе для Purrweb\nи делал для их Dribble аккаунта шоты/посты\nс 3-мя экранами концептов мобильных приложений, на стыке UI/UX и граф. дизайна",
+    "items": [
+      {
+        "id": "category-02-001",
+        "src": "/works/category-02/001-1454.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-002",
+        "src": "/works/category-02/002-542.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-003",
+        "src": "/works/category-02/003-5436.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-004",
+        "src": "/works/category-02/004-6345.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-005",
+        "src": "/works/category-02/005-642.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-006",
+        "src": "/works/category-02/006-6426.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-007",
+        "src": "/works/category-02/007-746.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-008",
+        "src": "/works/category-02/008-753.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-009",
+        "src": "/works/category-02/009-7536.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-010",
+        "src": "/works/category-02/010-846.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-011",
+        "src": "/works/category-02/011-857.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-012",
+        "src": "/works/category-02/012-864.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-013",
+        "src": "/works/category-02/013-864574.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-014",
+        "src": "/works/category-02/014-865.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-015",
+        "src": "/works/category-02/015-875.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-016",
+        "src": "/works/category-02/016-987.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      },
+      {
+        "id": "category-02-017",
+        "src": "/works/category-02/017-65.webp",
+        "width": 1600,
+        "height": 1200,
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "id": "category-03",
+    "title": "Личные презентации",
+    "description": "",
+    "items": [
+      {
+        "id": "category-03-001",
+        "src": "/works/category-03/001-1111.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-03-002",
+        "src": "/works/category-03/002-3.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-03-003",
+        "src": "/works/category-03/003-4444.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-03-004",
+        "src": "/works/category-03/004-5135.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-03-005",
+        "src": "/works/category-03/005-8877.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "id": "category-04",
+    "title": "Моушн",
+    "description": "",
+    "items": [
+      {
+        "id": "category-04-001",
+        "src": "/works/category-04/001-0921-1-animated.webp",
+        "width": 680,
+        "height": 1208,
+        "type": "gif"
+      },
+      {
+        "id": "category-04-002",
+        "src": "/works/category-04/002-0924-animated.webp",
+        "width": 680,
+        "height": 1208,
+        "type": "gif"
+      },
+      {
+        "id": "category-04-003",
+        "src": "/works/category-04/003-asset-animated.webp",
+        "width": 680,
+        "height": 1208,
+        "type": "gif"
+      },
+      {
+        "id": "category-04-004",
+        "src": "/works/category-04/004-asset-animated.webp",
+        "width": 680,
+        "height": 1208,
+        "type": "gif"
+      }
+    ]
+  },
+  {
+    "id": "category-05",
+    "title": "Посты для соц сетей",
+    "description": "",
+    "items": [
+      {
+        "id": "category-05-001",
+        "src": "/works/category-05/001-41.webp",
+        "width": 1080,
+        "height": 1080,
+        "type": "image"
+      },
+      {
+        "id": "category-05-002",
+        "src": "/works/category-05/002-642.webp",
+        "width": 1080,
+        "height": 1080,
+        "type": "image"
+      },
+      {
+        "id": "category-05-003",
+        "src": "/works/category-05/003-753.webp",
+        "width": 1080,
+        "height": 1080,
+        "type": "image"
+      },
+      {
+        "id": "category-05-004",
+        "src": "/works/category-05/004-86442.webp",
+        "width": 1080,
+        "height": 1080,
+        "type": "image"
+      },
+      {
+        "id": "category-05-005",
+        "src": "/works/category-05/005-asset.webp",
+        "width": 1080,
+        "height": 1080,
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "id": "category-06",
+    "title": "Презентации WarCraft 2 Aurora",
+    "description": "Был участником в ИТ-Лаборатории в качестве Дизайнера,\nподготавливал презентации для каждого из спринтов хакатона,\nВ целом их вышло больше 8-ми, где персонаж примерял каждый раз новые образы",
+    "items": [
+      {
+        "id": "category-06-001",
+        "src": "/works/category-06/001-1-10.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-002",
+        "src": "/works/category-06/002-1-11166.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-003",
+        "src": "/works/category-06/003-1-12.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-004",
+        "src": "/works/category-06/004-1-3.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-005",
+        "src": "/works/category-06/005-10-1.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-006",
+        "src": "/works/category-06/006-10-2.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-007",
+        "src": "/works/category-06/007-1321.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-008",
+        "src": "/works/category-06/008-3-2.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-009",
+        "src": "/works/category-06/009-3-7.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-010",
+        "src": "/works/category-06/010-5.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-011",
+        "src": "/works/category-06/011-8.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-012",
+        "src": "/works/category-06/012-9.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-013",
+        "src": "/works/category-06/013-9174624.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-06-014",
+        "src": "/works/category-06/014-bandicam-2026-09-30-13-42-32-675-animated.webp",
+        "width": 680,
+        "height": 380,
+        "type": "gif"
+      },
+      {
+        "id": "category-06-015",
+        "src": "/works/category-06/015-bandicam-2026-09-30-13-43-19-343-animated.webp",
+        "width": 680,
+        "height": 380,
+        "type": "gif"
+      },
+      {
+        "id": "category-06-016",
+        "src": "/works/category-06/016-bandicam-2026-09-30-13-44-00-494-animated.webp",
+        "width": 680,
+        "height": 380,
+        "type": "gif"
+      },
+      {
+        "id": "category-06-017",
+        "src": "/works/category-06/017-bandicam-2026-09-30-13-44-49-109-animated.webp",
+        "width": 680,
+        "height": 380,
+        "type": "gif"
+      }
+    ]
+  },
+  {
+    "id": "category-07",
+    "title": "Презентация Лабы для вузов",
+    "description": "Подготовливал несколько слайдов\nс демонстрациями для рассказа о концепте ИТ-Лаборатории для студентов,\nдве вариации: базовая и для ОмГУ с Достоевским",
+    "items": [
+      {
+        "id": "category-07-001",
+        "src": "/works/category-07/001-22.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-07-002",
+        "src": "/works/category-07/002-3.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-07-003",
+        "src": "/works/category-07/003-33.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-07-004",
+        "src": "/works/category-07/004-4.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      },
+      {
+        "id": "category-07-005",
+        "src": "/works/category-07/005-6.webp",
+        "width": 1600,
+        "height": 900,
+        "type": "image"
+      }
+    ]
+  }
+]
